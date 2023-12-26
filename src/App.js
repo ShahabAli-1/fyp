@@ -6,9 +6,8 @@ function App() {
     <BrowserRouter>
       <div className="h-screen">
         <Routes>
-          <Route path="/" element={<Login />}>
-            <Route index element={<Chat />} />
-          </Route>
+          <Route path="/" element={<Login />} />
+          <Route path="/chat" element={<Chat />} />
         </Routes>
       </div>
     </BrowserRouter>
