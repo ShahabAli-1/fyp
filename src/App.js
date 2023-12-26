@@ -1,6 +1,7 @@
 import Chat from "./screens/Chat/Chat";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from "./screens/Chat/Login";
+import Login from "./screens/Login";
+import Aboutus from "./screens/Aboutus";
 function App() {
   return (
     <BrowserRouter>
@@ -8,6 +9,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Login />} />
           <Route path="/chat" element={<Chat />} />
+          <Route path="/about" element={<Aboutus />} />
         </Routes>
       </div>
     </BrowserRouter>
